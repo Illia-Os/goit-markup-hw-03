@@ -12,11 +12,30 @@
 
 /* BODY */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'roboto', 'montserrat', sans-serif;
-  margin: 0 auto;
-  max-width: 1600px;
   color: var(--black-color);
+}
+
+.page {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.background-page {
+  margin: 0 auto;
+  max-width: 1920px;
+  max-height: 1080px;
 }
 
 .decoration-link {
@@ -51,7 +70,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   margin-right: 93px;
-  line-height: 31 \ 26;
+  line-height: 31 \26;
   letter-spacing: 0.03em;
   margin-left: 215px;
 }
@@ -97,7 +116,7 @@ body {
 .header-contact {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16 \ 14;
+  line-height: 16 \14;
   letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: 215px;
@@ -123,7 +142,7 @@ body {
 .list-hero {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60 \ 44;
+  line-height: 60 \44;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -141,7 +160,7 @@ body {
   background-color: var(--blue-color);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30 \ 16;
+  line-height: 30 \16;
   letter-spacing: 0.06em;
   padding: 10px 32px;
 }
@@ -156,11 +175,14 @@ body {
 
 .features {
   margin-top: 94px;
+  display: block;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 
 .title-features {
   font-size: 14px;
-  line-height: 16 \ 14;
+  line-height: 16 \14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text-color);
@@ -169,20 +191,15 @@ body {
 .paragraph-features {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24 \ 14;
+  line-height: 24 \14;
   letter-spacing: 0.03em;
   color: var(--gray-color);
-  padding-right: 84px;
 }
 
 .list-features {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-}
-
-.list-features:not(:first-child) {
-  padding-left: 30px;
 }
 
 /* TITLE (заголовки) */
@@ -247,7 +264,7 @@ body {
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36 \ 18;
+  line-height: 36 \18;
   letter-spacing: 0.06em;
 }
 
@@ -349,7 +366,7 @@ body {
   margin-top: 20px;
   margin-left: 215px;
   font-size: 14px;
-  line-height: 24 \ 14;
+  line-height: 24 \14;
   letter-spacing: 0.03em;
 }
 
