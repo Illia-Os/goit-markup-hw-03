@@ -12,30 +12,13 @@
 
 /* BODY */
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'roboto', 'montserrat', sans-serif;
   color: var(--black-color);
-}
-
-.page {
-  max-width: 1600px;
-  margin: auto;
-}
-
-.background-page {
-  margin: 0 auto;
-  max-width: 1920px;
-  max-height: 1080px;
+  /* +++++++++++++++++++++++++такі розміри у макеті++++++++++++++++++++++++ */
+  /* width: 1600px;
+  margin: auto; */
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 }
 
 .decoration-link {
@@ -65,65 +48,78 @@ body {
 }
 
 /* ----------------------------------------HEADER-------------------------------- */
+.container-header{
+  display: flex;
+  align-items: center;
+  /* height: 80px; */
+  border-bottom: 1px solid#ECECEC;
+  
+}
+
 .logo {
-  font-family: 'raleway', 'Montserrat', sans-serif;
+  display: flex;
+  padding-right: 93px;
+  padding-left: 375px;
+}
+
+.studio-logo {
+  font-family: "raleway",sans-serif;
   font-weight: 700;
   font-size: 26px;
-  margin-right: 93px;
-  line-height: 31 \26;
+  line-height: 31 \ 26;
   letter-spacing: 0.03em;
-  margin-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.list-contact, .list-nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16 \ 14;
+    letter-spacing: 0.02em;
+}
+
+.list-nav {
+  display: flex;
+  margin: 0;
+}
+
+.list-nav .item:not(:last-child) {
+  padding-right: 50px;
+}
+
+.item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  cursor: pointer;
+}
+
+.list-contact {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 375px;
+
+
+}
+
+.list-contact .item:not(:last-child) {
+  padding-right: 50px;
 }
 
 .web-logo {
   color: var(--blue-color);
 }
 
-.container-header .logo {
-  color: var(--black-color);
-}
-
-.container-header {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ececec;
-}
-
-.container-header .list-nav {
-  display: flex;
-  padding-left: 0px;
-}
-
-.list-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16 \14;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.link:hover,
-.link:focus {
+.item .link:hover,
+.item .link:focus {
   color: var(--blue-color);
-}
-
-.item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.header-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16 \14;
-  letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: 215px;
-}
-
-.list-contact {
-  display: flex;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -136,13 +132,16 @@ body {
 .section-hero {
   background-color: var(--gray-background-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
+  padding-left: 215px;
+  padding-right: 215px;
+  text-align: center;
 }
 
 .list-hero {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60 \44;
+  line-height: 60 \ 44;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -152,7 +151,7 @@ body {
 
 .button {
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .button-hero {
@@ -160,9 +159,12 @@ body {
   background-color: var(--blue-color);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30 \16;
+  line-height: 30 \ 16;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  border: 0;
+  
+  
 }
 
 .button-hero:hover,
@@ -174,24 +176,27 @@ body {
 /* SECTION FEATURES */
 
 .features {
-  margin-top: 94px;
-  display: block;
-  margin-left: 215px;
-  margin-right: 215px;
+  padding-top: 94px;
+  display: flex;
+  margin-left: 375px;
+  margin-right: 375px;
+}
+ 
+.features .item {
+  margin-right: 15px;
 }
 
 .title-features {
   font-size: 14px;
-  line-height: 16 \14;
+  line-height: 16 \ 14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text-color);
 }
 
 .paragraph-features {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24 \14;
+  line-height: 24 \ 14;
   letter-spacing: 0.03em;
   color: var(--gray-color);
 }
@@ -209,8 +214,9 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 /* WORKS */
@@ -257,85 +263,68 @@ body {
 
 /* PORTFOLIO */
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-portfolio {
-  margin: 0 auto;
-}
-
-.title-portfolio {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36 \18;
-  letter-spacing: 0.06em;
-}
-
-.paragraph-portfolio {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--gray-color);
+  padding-top: 94px;
 }
 
 .list-filter-portfolio {
   display: flex;
+  gap: 8px;
   justify-content: center;
+  margin: 0;
 }
 
-.section-portfolio .item-button {
-  /* Шрифти не підтягуються з body тому підключив так */
-  font-family: 'roboto', sans-serif;
-  padding: 6px 22px;
-  cursor: pointer;
+.list-filter-portfolio .item-button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26 \16;
+  line-height: 26 \ 16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.button-filter:not(:last-child) {
-  padding-right: 8px;
+.item-button {
+  padding: 6px 25px;
+  border: 0;
 }
 
-.item-button:hover,
-.item-button:focus {
-  color: var(--white-color);
+.item-button:focus,
+.item-button:hover {
   background-color: var(--blue-color);
-  border-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 .item-portfolio {
-  flex-basis: calc(100% / 3 - 20px);
-  margin-top: 15px;
+  width:calc((100% - 30px) \ 3);
+  margin: auto;
+  border-bottom: 1px solid #2f303a;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
-.card {
-  background-color: #eeeeee;
-  margin-right: 0px;
+.card-discription .title-portfolio {
+  font-size: 18px;
+  line-height: 36 \ 18;
+  letter-spacing: 0.06em;
 }
 
-.card {
-  border-bottom: 1px solid var(--black-color);
-}
-
-/* .card:hover,
-.card:focus {
-  box-shadow: var(--card-shadow-hight);
-} */
-
-.card-discription {
-  padding-left: 24px;
-  padding-bottom: 20px;
-  margin: 0;
+.card-discription .paragraph-portfolio {
+  font-size: 16px;
+  line-height: 30 \ 16;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
 }
 
 /* ++++++++++++++++++!(ALERT)ТИМЧАСОВО!(ALERT)++++++++++++++++++++ */
@@ -347,26 +336,42 @@ body {
 /* +++++++++++++++++!(ALERT)ТИМЧАСОВО!(ALERT)+++++++++++++++++++++ */
 /* ------------------------------------------------------------------------- */
 /* -------------------------------footer------------------------------------ */
+
+
 .set-footer {
   background-color: var(--gray-background-color);
-  height: 252px;
   cursor: pointer;
 }
 
-.logo .studio-logo-footer {
+
+
+.logo-footer .studio-logo-footer {
   color: var(--white-color);
 }
 
-.set-footer .logo {
+.logo-footer {
+  font-family: "raleway",sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31 \ 26;
+  letter-spacing: 0.03em;
   padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 20px;
+}
+
+.studio-logo-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .list-contact-address {
   font-style: normal;
-  margin-top: 20px;
-  margin-left: 215px;
+  padding-left: 215px;
+  padding-bottom: 60px;
+  margin: 0;
   font-size: 14px;
-  line-height: 24 \14;
+  line-height: 24 \ 14;
   letter-spacing: 0.03em;
 }
 
