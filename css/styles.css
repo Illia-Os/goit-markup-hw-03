@@ -203,8 +203,11 @@ body {
 
 .list-features {
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
+  margin: auto;
+}
+
+.list-features .item {
+  width: 270px;
 }
 
 /* TITLE (заголовки) */
@@ -216,15 +219,12 @@ body {
   letter-spacing: 0.03em;
   padding-top: 94px;
   padding-bottom: 50px;
+  padding-left: 215px;
+  padding-right: 215px;
   margin: 0;
 }
 
 /* WORKS */
-
-.section-works {
-  align-items: center;
-  margin: 0;
-}
 
 .list-works {
   display: flex;
