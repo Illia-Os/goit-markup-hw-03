@@ -51,7 +51,6 @@ body {
 .container-header{
   display: flex;
   align-items: center;
-  /* height: 80px; */
   border-bottom: 1px solid#ECECEC;
   
 }
@@ -59,7 +58,7 @@ body {
 .logo {
   display: flex;
   padding-right: 93px;
-  padding-left: 375px;
+  padding-left: 215px;
 }
 
 .studio-logo {
@@ -104,7 +103,7 @@ body {
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 375px;
+  padding-right: 215px; 
 
 
 }
@@ -178,8 +177,9 @@ body {
 .features {
   padding-top: 94px;
   display: flex;
-  margin-left: 375px;
-  margin-right: 375px;
+  /* якщо зробити pl375 і pr375 то секція feature буде як на макеті */
+  margin-left: 215px;
+  margin-right: 215px;
 }
  
 .features .item {
@@ -264,7 +264,7 @@ body {
 /* PORTFOLIO */
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
