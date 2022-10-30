@@ -16,8 +16,8 @@ body {
   font-family: 'roboto', 'montserrat', sans-serif;
   color: var(--black-color);
   /* +++++++++++++++++++++++++такі розміри у макеті++++++++++++++++++++++++ */
-  width: 1600px;
-  margin: auto;
+  /* width: 1600px;
+  margin: auto; */
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 }
 
@@ -72,7 +72,7 @@ body {
   font-family: "raleway",sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31 \ 26;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -81,7 +81,7 @@ body {
 .list-contact, .list-nav{
   font-weight: 500;
   font-size: 14px;
-  line-height: 16 \ 14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 
@@ -147,7 +147,7 @@ body {
 .list-hero {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60 \ 44;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -165,7 +165,7 @@ body {
   background-color: var(--blue-color);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30 \ 16;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   padding: 10px 32px;
   border: 0;
@@ -194,7 +194,7 @@ body {
 
 .title-features {
   font-size: 14px;
-  line-height: 16 \ 14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text-color);
@@ -203,7 +203,7 @@ body {
 
 .paragraph-features {
   font-size: 14px;
-  line-height: 24 \ 14;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--gray-color);
   margin-top: 0;
@@ -225,7 +225,7 @@ body {
 
 .title {
   font-size: 36px;
-  line-height: 42 \ 36;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
@@ -251,7 +251,7 @@ body {
 
 .section-team {
   font-size: 16px;
-  line-height: 19 \ 16;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -279,13 +279,6 @@ body {
 
 /* PORTFOLIO */
 
-/* .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .list-filter-portfolio {
   display: flex;
   gap: 8px;
@@ -296,7 +289,7 @@ body {
 .list-filter-portfolio .item-button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26 \ 16;
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -314,7 +307,7 @@ body {
 }
 
 .section-portfolio {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -329,28 +322,25 @@ body {
 }
 
 .item-portfolio {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid var(--gray-color);
 }
 
-.item-portfolio:nth-child(3n) {
-  margin-right: 0;
-}
-
 .item-portfolio:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .card-discription .title-portfolio {
   font-size: 18px;
-  line-height: 36 \ 18;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 
 .card-discription .paragraph-portfolio {
   font-size: 16px;
-  line-height: 30 \ 16;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--gray-color);
 }
@@ -381,7 +371,7 @@ body {
   font-family: "raleway",sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31 \ 26;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-left: 215px;
@@ -400,7 +390,7 @@ body {
   padding-bottom: 60px;
   margin: 0;
   font-size: 14px;
-  line-height: 24 \ 14;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
