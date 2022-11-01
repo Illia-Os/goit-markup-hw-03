@@ -18,41 +18,48 @@
     <!-- шапка -->
 
     <header>
-      <div class="container-header">
-        <div class="logo">
-          <a class="studio-logo decoration-link" href="./index.html">
-            <span class="web-logo">Web</span>Studio</a
-          >
-        </div>
-        <nav class="header-nav">
-          <ul class="list-nav decoration-point">
-            <li class="item"><a class="link decoration-link" href="./index.html">Студія</a></li>
+      <div class="conteiner-header-footer">
+        <div class="container-header">
+          <div class="logo">
+            <a class="studio-logo decoration-link" href="./index.html">
+              <span class="web-logo">Web</span>Studio</a
+            >
+          </div>
+          <nav class="header-nav">
+            <ul class="list-nav decoration-point">
+              <li class="item">
+                <a class="link decoration-link" href="./index.html">Студія</a>
+              </li>
+              <li class="item">
+                <a class="link decoration-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="item">
+                <a class="link decoration-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list-contact decoration-point">
             <li class="item">
-              <a class="link decoration-link" href="./portfolio.html">Портфоліо</a>
+              <a class="link decoration-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="item"><a class="link decoration-link" href="">Контакти</a></li>
+            <li class="item">
+              <a class="link decoration-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="list-contact decoration-point">
-          <li class="item">
-            <a class="link decoration-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="link decoration-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <!-- контент -->
-
     <main>
-      <div class="section-retreat down-retreat">
-        <section class="section-portfolio">
+      <section class="section-portfolio">
+        <div class="container">
           <h1 class="hiden">Портфоліо</h1>
           <ul class="list-filter-portfolio decoration-point">
             <li class="button-filter">
-              <button class="item-button" type="button">Усі</button>
+              <button class="item-button item-one" type="button">Усі</button>
             </li>
             <li class="button-filter">
               <button class="item-button" type="button">Веб-сайти</button>
@@ -197,44 +204,48 @@
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- Підвал -->
 
     <footer>
-      <div class="set-footer">
-        <div class="logo-footer">
-          <a class="studio-logo-footer decoration-link" href="./index.html">
-            <span class="web-logo">Web</span>Studio</a
-          >
+      <div class="conteiner-header-footer">
+        <div class="set-footer">
+          <div class="logo-footer">
+            <a class="studio-logo-footer decoration-link" href="./index.html">
+              <span class="web-logo">Web</span>Studio</a
+            >
+          </div>
+          <address>
+            <ul class="list-contact-address decoration-point">
+              <li class="styles-link">
+                <a
+                  class="link-address style-address decoration-link"
+                  href="https://goo.gl/maps/E6FotYMbGwr5JEnZ7"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="styles-link">
+                <a
+                  class="contact-link-address style-address decoration-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="styles-link">
+                <a
+                  class="contact-link-address style-address decoration-link"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-        <address>
-          <ul class="list-contact-address decoration-point">
-            <li class="styles-link">
-              <a
-                class="link-address style-address decoration-link"
-                href="https://goo.gl/maps/E6FotYMbGwr5JEnZ7"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="styles-link">
-              <a
-                class="contact-link-address style-address decoration-link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="styles-link">
-              <a class="contact-link-address style-address decoration-link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
       </div>
     </footer>
   </body>
