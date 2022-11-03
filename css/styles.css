@@ -123,12 +123,16 @@ img {
   cursor: pointer;
 }
 
+.list-contact .link{
+  color: var(--gray-color);
+}
 
 .list-contact {
   display: flex;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--gray-color);
 }
 
 .list-contact .item:not(:last-child) {
@@ -254,7 +258,7 @@ img {
 
 .section-works {
   padding-top:94px;
-  
+  padding-bottom: 94px;
 }
 
 .list-works {
@@ -319,7 +323,7 @@ img {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .button-filter:not(:last-child) {
@@ -350,7 +354,7 @@ img {
 
 .card-discription {
   padding-left: 24px;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 20px;
   border: 1px solid var(--white-color);
   border-top: inherit;
@@ -419,13 +423,12 @@ img {
 .card-discription:hover,
 .card-discription:focus {
   border: 1px solid var(--card-border-color);
-  /* box-shadow: var(--card-shadow-filter); */
   border-top: inherit;
 }
 
 .list-filter-portfolio .item-button:active {
-  color: var(--gray-color);
-  background-color:rgb(1, 122, 192);
+  color: #a7a7a7;
+  background-color:#0086d4;
 }
 
 /* ++++++++++++++++++!(ALERT)ТИМЧАСОВО!(ALERT)++++++++++++++++++++ */
