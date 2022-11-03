@@ -98,6 +98,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  color: var(--black-text-color);
 }
 
 .list-nav {
@@ -140,6 +141,10 @@ body {
 .item .link:hover,
 .item .link:focus {
   color: var(--blue-color);
+}
+
+.item .link:active {
+  color: var(--gray-color);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -197,6 +202,7 @@ body {
 
 .section-features {
   padding-top: 94px;
+  background-color: var(--white-background-color);
 }
 
 .list-features .item {
@@ -239,12 +245,14 @@ body {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
+  color: var(--black-text-color);
 }
 
 /* WORKS */
 
 .section-works {
   padding-top:94px;
+  background-color:var(--white-background-color);
 }
 
 .list-works {
@@ -263,6 +271,8 @@ body {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-background-color);
+  color: var(--black-text-color);
 }
 
 .titul-team {
@@ -298,6 +308,7 @@ body {
 .section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-background-color);
 }
 
 .list-filter-portfolio {
@@ -318,6 +329,7 @@ body {
 .title-portfolio {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--black-text-color);
 }
 
 .paragraph-portfolio {
@@ -396,12 +408,14 @@ body {
 
 .card-discription:hover,
 .card-discription:focus {
-  border: 1px solid var(--card-border-color);
+  /* border: 1px solid var(--card-border-color); */
+  box-shadow: var(--card-shadow-filter);
   border-top: inherit;
 }
 
 .list-filter-portfolio .item-button:active {
-  color: var(--gray-background-color);
+  color: var(--gray-color);
+  background-color:rgb(1, 122, 192);
 }
 
 /* ++++++++++++++++++!(ALERT)ТИМЧАСОВО!(ALERT)++++++++++++++++++++ */
