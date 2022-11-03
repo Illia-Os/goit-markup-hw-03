@@ -197,7 +197,6 @@ body {
 
 .section-features {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .list-features .item {
@@ -243,6 +242,10 @@ body {
 }
 
 /* WORKS */
+
+.section-works {
+  padding-top:94px;
+}
 
 .list-works {
   display: flex;
@@ -428,7 +431,6 @@ body {
   letter-spacing: 0.03em;
   margin-right: auto;
   margin-bottom: 20px;
-  /* width: 145px; */
 }
 
 .list-contact-address {
