@@ -355,7 +355,7 @@ img {
 .card-discription {
   padding-left: 24px;
   padding-top: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   border: 1px solid var(--white-color);
   border-top: inherit;
 } 
@@ -420,8 +420,7 @@ img {
   box-shadow: var(--card-shadow-filter);
 }
 
-.card-discription:hover,
-.card-discription:focus {
+.card-discription {
   border: 1px solid var(--card-border-color);
   border-top: inherit;
 }
