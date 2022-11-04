@@ -356,7 +356,7 @@ img {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid var(--white-color);
+  border: 1px solid var(--card-border-color);
   border-top: inherit;
 } 
 
@@ -418,11 +418,6 @@ img {
   background-color: var(--blue-color);
   color: var(--white-color);
   box-shadow: var(--card-shadow-filter);
-}
-
-.card-discription {
-  border: 1px solid var(--card-border-color);
-  border-top: inherit;
 }
 
 .list-filter-portfolio .item-button:active {
